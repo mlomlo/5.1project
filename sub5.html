@@ -1,88 +1,127 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <head>
-<title>book</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>55</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		img {
+			display: block;
+			margin-bottom: 0px;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 0px;
+}
+		#bg{
+			z-index: 1;
+			position: fixed;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+		}
+		#s__01{
+			position: fixed;
+			z-index: 3;
+		}
+	</style>
+	<script>
+	var cnt =3;
+	function imgToggle(){
+		var img1 = document.getElementById('img1');
+		var img2 = document.getElementById('img2');
+		var img3 = document.getElementById('img3');
+		if(cnt%3==1){
+			img1.src="photo1.jpg";
+			img2.src="photo2.jpg";
+			img3.src="photo3.jpg";
+		}
+		else if (cnt%3==2) {
+			img1.src="photo2.jpg";
+			img2.src="photo3.jpg";
+			img3.src="photo1.jpg";
+		}
+		else {
+			img1.src="photo3.jpg";
+			img2.src="photo2.jpg";
+			img3.src="photo1.jpg";
+		}
+		cnt++;
+	}
+	</script>
 </head>
-<style>
-img{
-	display: block;
-	margin-bottom: -1px;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-}
-table.td{
-	margin: 0px;
-	padding: 0px;
-	border-collapse: collapse;
-	img{display: block;}
-}
-</style>
+
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<!-- Save for Web Slices (book.psd) -->
-<table id="__01" width="1901" height="964" border="0" cellpadding="0" cellspacing="0">
-	<tr>
-		<td colspan="5">
-			<img src="images/sub5_01.gif" width="1900" height="77" alt=""></td>
-		<td>
+	<div id="bg" z-index:1;>
+		<img src="photo1.jpg" id="img1">
+		<img src="photo2.jpg" id="img2">
+		<img src="photo3.jpg" id="img3">
+	</div>
+
+	<!-- Save for Web Slices (55.psd) -->
+	<div z-index:2;>
+	<table id="s__01" width="1800" height="900" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="32" height="23">
+				</td>
+			<td colspan="3" width="1888" height="23">
 			</td>
-	</tr>
-	<tr>
-		<td rowspan="7">
-			<img src="images/sub5_02.gif" width="414" height="887" alt=""></td>
-		<td>
-			<a href="C:\Users\KimHR\Desktop\main.html">
-			<img src="images/sub5_03.gif" width="283" height="82" alt=""></a></td>
-		<td rowspan="7">
-			<img src="images/sub5_04.gif" width="741" height="887" alt=""></td>
-		<td rowspan="6">
-			<img src="images/sub5_05.gif" width="403" height="406" alt=""></td>
-		<td rowspan="7">
-			<img src="images/sub5_06.gif" width="59" height="887" alt=""></td>
-		<td>
+		</tr>
+		<tr>
+			<td colspan="2" rowspan="6" width="60" height="257">
+				</td>
+			<td>
+				<a href="\main.html"><!- 호스팅할 때 index로 바꿈-->
+					<img src="images/sub5_04.gif" width="167" height="88" alt=""></a>
 			</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="C:\Users\KimHR\Desktop\sub1.html">
-			<img src="images/sub5_07.gif" width="283" height="81" alt=""></a></td>
-		<td>
+			<td rowspan="6" width="1643" height="517">
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="\sub1.html">
+					<img src="images/sub5_06.gif" width="167" height="84" alt=""></a>
 			</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="C:\Users\KimHR\Desktop\sub2.html">
-			<img src="images/sub5_08.gif" width="283" height="79" alt=""></a></td>
-		<td>
+		</tr>
+		<tr>
+			<td>
+				<a href="\sub2.html">
+					<img src="images/sub5_07.gif" width="167" height="90" alt=""></a>
 			</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="C:\Users\KimHR\Desktop\sub3.html">
-			<img src="images/sub5_09.gif" width="283" height="83" alt=""></a></td>
-		<td>
+		</tr>
+		<tr>
+			<td>
+				<a href="\sub3.html">
+					<img src="images/sub5_08.gif" width="167" height="95" alt=""></a>
 			</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="C:\Users\KimHR\Desktop\sub4.html">
-			<img src="images/sub5_10.gif" width="283" height="79" alt=""></a></td>
-		<td>
+		</tr>
+		<tr>
+			<td>
+				<a href="\sub4.html">
+					<img src="images/sub5_09.gif" width="167" height="94" alt=""></a>
 			</td>
-	</tr>
-	<tr>
-		<td rowspan="2">
-			<img src="images/sub5_11.gif" width="283" height="483" alt=""></td>
-		<td>
-			</td>
-	</tr>
-	<tr>
-		<td>
-			<img src="images/sub5_12.gif" width="403" height="481" alt=""></td>
-		<td>
-			</td>
-	</tr>
-</table>
-<!-- End Save for Web Slices -->
+		</tr>
+		<tr>
+			<td>
+				<!-- 이미지 전환 -->
+				<img src="images/sub5_10.gif" width="167" height="66" alt="" onclick="imgToggle()"></td>
+		</tr>
+		<tr>
+			<td colspan="4" width="1900" height="340">
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="32" height="1" alt=""></td>
+			<td>
+				<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="78" height="1" alt=""></td>
+			<td>
+				<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="167" height="1" alt=""></td>
+			<td>
+				<img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="1643" height="1" alt=""></td>
+		</tr>
+	</table>
+</div>
+	<!-- End Save for Web Slices -->
 </body>
+
 </html>
